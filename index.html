@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Современный сайт</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="container header-content">
+    <div class="logo">MySite</div>
+    <nav class="nav">
+      <a href="#about">О нас</a>
+      <a href="#benefits">Преимущества</a>
+      <a href="#pricing">Цены</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <button class="mobile-menu-btn">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+</header>
+
+<section class="hero" id="hero">
+  <div class="hero-bg"></div>
+  <div class="container hero-content">
+    <div class="hero-title">
+      <h1 class="hero-title-main">Современный сайт</h1>
+      <h2 class="hero-title-sub">Красивый и быстрый</h2>
+    </div>
+    <p class="hero-description">Пример современного сайта с градиентами, тенями и плавной анимацией.</p>
+    <div class="hero-stats">
+      <div class="stat"><div class="stat-value">100+</div><div class="stat-label">Клиентов</div></div>
+      <div class="stat"><div class="stat-value">50+</div><div class="stat-label">Проектов</div></div>
+    </div>
+    <button class="cta-button" data-action="open-form">Записаться</button>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="container">
+    <h2 class="section-title">О нас</h2>
+    <div class="about-grid">
+      <div class="about-card">
+        <div class="about-icon">💡</div>
+        <h3>Идеи</h3>
+        <p>Мы создаём уникальные идеи и воплощаем их в жизнь.</p>
+      </div>
+      <div class="about-card">
+        <div class="about-icon">🚀</div>
+        <h3>Рост</h3>
+        <p>Помогаем бизнесу расти и развиваться эффективно.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="benefits" id="benefits">
+  <div class="container">
+    <h2 class="section-title">Преимущества</h2>
+    <div class="benefits-grid">
+      <div class="benefit-card">
+        <div class="benefit-number">1</div>
+        <h3>Современный дизайн</h3>
+        <p>Красивый интерфейс и продуманная анимация.</p>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-number">2</div>
+        <h3>Лёгкость использования</h3>
+        <p>Простая и удобная навигация по сайту.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="pricing" id="pricing">
+  <div class="container">
+    <h2 class="section-title">Цены</h2>
+    <div class="pricing-grid">
+      <div class="pricing-card">
+        <div class="pricing-badge">Базовый</div>
+        <div class="pricing-price"><span class="price-currency">₽</span><span class="price-value">5000</span></div>
+        <ul class="pricing-features">
+          <li>Функционал A</li>
+          <li>Функционал B</li>
+        </ul>
+        <button class="pricing-button" data-action="open-form">Купить</button>
+      </div>
+      <div class="pricing-card pricing-card-featured">
+        <div class="pricing-badge pricing-badge-featured">Премиум</div>
+        <div class="pricing-price"><span class="price-currency">₽</span><span class="price-value">15000</span></div>
+        <ul class="pricing-features">
+          <li>Функционал A</li>
+          <li>Функционал B</li>
+          <li>Функционал C</li>
+        </ul>
+        <button class="pricing-button" data-action="open-form">Купить</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="faq" id="faq">
+  <div class="container faq-list">
+    <div class="faq-item">
+      <button class="faq-question">Как начать?<svg width="20" height="20"><path d="M0 5 L10 15 L20 5" stroke="currentColor" stroke-width="2" fill="none"/></svg></button>
+      <div class="faq-answer"><p>Просто нажмите на кнопку и заполните форму.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question">Сколько стоит?<svg width="20" height="20"><path d="M0 5 L10 15 L20 5" stroke="currentColor" stroke-width="2" fill="none"/></svg></button>
+      <div class="faq-answer"><p>Стоимость зависит от выбранного тарифа.</p></div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer-content">
+    <div>
+      <div class="footer-logo">MySite</div>
+      <p class="footer-description">Красивый современный сайт с плавной анимацией.</p>
+    </div>
+    <div class="footer-section">
+      <h4>Ссылки</h4>
+      <ul class="footer-links">
+        <li><a href="#about">О нас</a></li>
+        <li><a href="#benefits">Преимущества</a></li>
+        <li><a href="#pricing">Цены</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">© 2025 MySite</div>
+</footer>
+
+<div class="modal" id="emailModal">
+  <div class="modal-overlay"></div>
+  <div class="modal-content">
+    <button class="modal-close">×</button>
+    <h3 class="modal-title">Оставьте email</h3>
+    <p class="modal-description">Мы свяжемся с вами для консультации.</p>
+    <form class="email-form" id="emailForm">
+      <div class="form-group">
+        <input type="email" id="email" placeholder="Ваш email" required>
+      </div>
+      <button class="form-button">Отправить</button>
+    </form>
+    <div class="form-success" id="formSuccess">
+      <h4>Спасибо!</h4>
+      <p>Мы получили ваш email.</p>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
